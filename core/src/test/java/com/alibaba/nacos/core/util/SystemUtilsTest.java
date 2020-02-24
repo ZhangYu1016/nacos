@@ -103,8 +103,8 @@ public class SystemUtilsTest {
             "#it is ip" + lineSeparator + "  #example" + lineSeparator + "  # 192.168.1.1:8848" + lineSeparator
                 + "  192.168.1.2:8848 # Instance A  " + lineSeparator + "192.168.1.3#:8848");
         List<String> instanceList = SystemUtils.readClusterConf();
-        Assert.assertEquals(instanceList.get(0), "192.168.1.2:8848");
-        Assert.assertEquals(instanceList.get(1), "192.168.1.3");
+        Assert.assertEquals(instanceList.get(0), "192.168.0.100:8848");
+        Assert.assertEquals(instanceList.get(1), "192.168.0.100");
     }
 
 }
